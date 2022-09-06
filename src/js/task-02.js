@@ -23,5 +23,6 @@ const makeListIngredients = ingredients => {
   });
 };
 
-const elements = makeListIngredients(ingredients);
-listIngredientsRef.append(...elements);
+// const elements = makeListIngredients(ingredients);
+// listIngredientsRef.append(...elements);
+listIngredientsRef.append(...makeListIngredients(ingredients));
