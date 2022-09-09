@@ -9,15 +9,15 @@ const refs = {
 
 let counterValue = 0;
 
-const decrement = () => {
+const handleDecrement = () => {
   counterValue -= 1;
   refs.number.textContent = counterValue;
 };
 
-const increment = () => {
+const handleIncrement = () => {
   counterValue += 1;
   refs.number.textContent = counterValue;
 };
 
-refs.btnDecrement.addEventListener('click', decrement);
-refs.btnIncrement.addEventListener('click', increment);
+refs.btnDecrement.addEventListener('click', handleDecrement);
+refs.btnIncrement.addEventListener('click', handleIncrement);

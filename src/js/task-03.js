@@ -20,10 +20,10 @@ const images = [
 
 const imagesListRef = document.querySelector('ul.gallery');
 
-const makeGalleryRef = images
+const makeGalleryMarkup = images
   .map(
     ({ url, alt }) =>
       `<li class="gallery__item"><a href="#"><img src="${url}" alt="${alt}" class="gallery__img" width="720"></a></li>`
   )
   .join('');
-imagesListRef.insertAdjacentHTML('beforeend', makeGalleryRef);
+imagesListRef.insertAdjacentHTML('beforeend', makeGalleryMarkup);

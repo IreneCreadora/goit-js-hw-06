@@ -7,7 +7,7 @@
 //  які ми вже додали у вихідні файли завдання.
 const inputEl = document.querySelector('#validation-input');
 
-function reviewInput(event) {
+function handleInputValidate(event) {
   if (event.currentTarget.value.length === Number(inputEl.dataset.length)) {
     event.currentTarget.classList.add('valid');
     event.currentTarget.classList.remove('invalid');
@@ -17,4 +17,4 @@ function reviewInput(event) {
   }
 }
 
-inputEl.addEventListener('blur', reviewInput);
+inputEl.addEventListener('blur', handleInputValidate);
