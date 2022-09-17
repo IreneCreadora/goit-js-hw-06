@@ -12,3 +12,11 @@ function onInputChange(event) {
   const { value } = event.currentTarget;
   refs.nameOutput.textContent = value ? value : 'Anonymous';
 }
+// const refs = {
+//   input: document.querySelector('#name-input'),
+//   output: document.querySelector('#name-output'),
+// };
+// refs.input.addEventListener('input', changeName);
+// function changeName({ target: { value } }) {
+//   refs.output.textContent = value.trim() || 'Anonymous';
+// }
